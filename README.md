@@ -1,12 +1,24 @@
-# Network Information Batch Project
+# Network Monitoring Batch Assignment
 
-Files:
-- `network_check.bat` — checks connectivity and collects IP, subnet mask, and MAC address information.
-- `network_report.bat` — analyzes `network_info.txt` and creates `report.txt`.
+A simple Windows batch scripting project for collecting basic network information and generating a report.
 
-Usage:
-1. Keep both `.bat` files in the same folder.
-2. Run `network_check.bat` first.
-3. Run `network_report.bat` after `network_info.txt` has been created.
+## Files
 
-Note: The email portion should be configured with an authorized SMTP service rather than storing passwords in the batch file.
+- `collect_network_info.bat` — collects network information and saves it to `network_info.txt`.
+- `generate_report.bat` — uses the collected information to create `report.txt`.
+
+## Requirements
+
+- Windows 10/11
+- Command Prompt
+- PowerShell
+- Microsoft Outlook (optional)
+
+## Usage
+
+1. Run `collect_network_info.bat`.
+2. Enter the target IP address or hostname.
+3. Run `generate_report.bat`.
+4. Open `report.txt` to view the report.
+
+> **Note:** Only use the scripts on systems you own or have permission to monitor.
