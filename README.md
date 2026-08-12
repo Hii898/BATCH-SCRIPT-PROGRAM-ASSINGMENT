@@ -1,11 +1,28 @@
-# Network Monitoring Batch Assignment
+# Network Monitoring Tool
 
-A simple Windows batch scripting project for collecting basic network information and generating a report.
+A simple Windows batch scripting project that checks network connectivity, collects basic network information, and generates a readable report.
 
-## Files
+## Features
 
-- `collect_network_info.bat` — collects network information and saves it to `network_info.txt`.
-- `generate_report.bat` — uses the collected information to create `report.txt`.
+- Tests connectivity using an IP address or hostname
+- Collects basic network information
+- Saves collected data for later use
+- Generates a network report
+- Optional Outlook email support
+
+## Scripts
+
+| File | Purpose |
+|---|---|
+| `collect_network_info.bat` | Collects network information |
+| `generate_report.bat` | Generates the final report |
+
+## How to Run
+
+1. Run `collect_network_info.bat`
+2. Enter the target IP address or hostname
+3. Run `generate_report.bat`
+4. Open `report.txt`
 
 ## Requirements
 
@@ -14,11 +31,4 @@ A simple Windows batch scripting project for collecting basic network informatio
 - PowerShell
 - Microsoft Outlook (optional)
 
-## Usage
-
-1. Run `collect_network_info.bat`.
-2. Enter the target IP address or hostname.
-3. Run `generate_report.bat`.
-4. Open `report.txt` to view the report.
-
-> **Note:** Only use the scripts on systems you own or have permission to monitor.
+**For educational and authorized network-monitoring use only.**
